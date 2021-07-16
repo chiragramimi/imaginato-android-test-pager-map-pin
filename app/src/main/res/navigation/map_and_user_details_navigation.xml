@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_map">
+
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="com.imaginato.randomusers.ui.map.MapFragment"
+        android:label="@string/text_title_map"
+        tools:layout="@layout/fragment_map" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/navigation_user_details" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_user_details"
+        android:name="com.imaginato.randomusers.ui.userdetails.UserDetailsFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_user_details">
+        <argument
+            android:name="user"
+            app:argType="com.imaginato.randomusers.data.randomuser.entity.RandomUserItem" />
+    </fragment>
+</navigation>

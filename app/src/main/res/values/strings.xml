@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Random Users</string>
+    <string name="text_title_map">Map</string>
+    <string name="text_title_user_details">User Details</string>
+    <string name="text_refresh">Refresh</string>
+    <string name="text_gender_value">Gender: %s</string>
+    <string name="text_phone_value">Phone: %s</string>
+</resources>
